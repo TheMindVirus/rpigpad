@@ -5,6 +5,8 @@ Ever wanted to use 2 Mice instead of the usual Keyboard and Mouse to play PC gam
 Well now you can! All that's required is a correctly configured Raspberry Pi 4. \
 (other models of Pi may work with some tweaking and are as yet untested.)
 
+![screenshot](https://github.com/TheMindVirus/rpigpad/blob/main/screenshot.png)
+
 The service works by using the libcomposite version of the legacy g_hid gadget driver at `/dev/hidg0`. \
 This then sends messages across a USB-C to USB-A cable connected to your PC \
 with the Pi's on-board DWC2 Controller.
@@ -18,5 +20,3 @@ It will try to use any HID device it can find, so if you get stuck there's more 
 If you are unfamiliar with setting up USB Gadgets, you will need to make one edit to `/boot/config.txt` \
 and that is to add `dtoverlay=dwc2,dr_mode=peripheral`. Other values for `dr_mode` include `host` and `otg`. \
 More information: https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget
-
-![screenshot](https://github.com/TheMindVirus/rpigpad/blob/main/screenshot.png)
