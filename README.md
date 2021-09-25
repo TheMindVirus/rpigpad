@@ -15,4 +15,7 @@ and use `make install`. Feel free to customise the Makefile and Service to find 
 You will need to edit the `rpigpad.py` file to configure which 2 mice you would like to use. \
 It will try to use any HID device it can find, so if you get stuck there's more info there.
 
+If you are unfamiliar with setting up USB Gadgets, you will need to make one edit to `/boot/config.txt` \
+and that is to add `dtoverlay=dwc2,dr_mode=peripheral`. Other values for `dr_mode` include `host` and `otg`.
+
 ![screenshot](https://github.com/TheMindVirus/rpigpad/blob/main/screenshot.png)
