@@ -6,7 +6,8 @@ Well now you can! All that's required is a correctly configured Raspberry Pi 4. 
 (other models of Pi may work with some tweaking and are as yet untested.)
 
 The service works by using the libcomposite version of the legacy g_hid gadget driver at `/dev/hidg0`. \
-This then sends messages across a USB-C to USB-A cable connected to your PC with the Pi's on-board DWC2 Controller.
+This then sends messages across a USB-C to USB-A cable connected to your PC \
+with the Pi's on-board DWC2 Controller.
 
 To Install, use `git clone` to create a local copy of the repository (or download as .zip) \
 and use `make install`. Feel free to customise the Makefile and Service to find what works.
