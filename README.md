@@ -7,6 +7,7 @@ Well now you can! All that's required is a correctly configured Raspberry Pi 4. 
 
 ![screenshot](https://github.com/TheMindVirus/rpigpad/blob/main/screenshot.png)
 
+## Installation
 The service works by using the libcomposite version of the legacy g_hid gadget driver at `/dev/hidg0`. \
 This then sends messages across a USB-C to USB-A cable connected to your PC \
 with the Pi's on-board DWC2 Controller.
