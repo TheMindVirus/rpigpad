@@ -17,5 +17,6 @@ It will try to use any HID device it can find, so if you get stuck there's more 
 
 If you are unfamiliar with setting up USB Gadgets, you will need to make one edit to `/boot/config.txt` \
 and that is to add `dtoverlay=dwc2,dr_mode=peripheral`. Other values for `dr_mode` include `host` and `otg`.
+More information: https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget
 
 ![screenshot](https://github.com/TheMindVirus/rpigpad/blob/main/screenshot.png)
