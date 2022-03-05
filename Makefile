@@ -5,4 +5,4 @@ install:
 remove:
 	sudo bash remove.sh
 play:
-	sudo python3 rpigpad.py
+	sudo python3 rpikbd.py
